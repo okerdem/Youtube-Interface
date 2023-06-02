@@ -1,0 +1,30 @@
+.sidebar-nav {
+  padding-top: 4px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  width: 72px;
+  background-color: white;
+  z-index: 100;
+}
+
+.sidebar-buttons-div{
+  height: 74px;
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.sidebar-buttons-div img{
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.sidebar-buttons-div:hover{
+  background-color:lightgray;
+}

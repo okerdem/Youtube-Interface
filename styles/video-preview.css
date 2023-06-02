@@ -5,6 +5,18 @@
   row-gap: 20px;
 }
 
+@media (max-width: 750px) {
+  .video-preview-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-preview-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .video-preview-div {
   margin-right: 8px;
   margin-bottom: 16px;
@@ -12,6 +24,7 @@
 
 .thumbnail-div {
   margin-bottom: 12px;
+  position: relative;
 }
 
 .thumbnail {
@@ -19,6 +32,18 @@
   height: 100%;
   object-fit: contain;
   background-color: black;
+}
+
+.video-time-div{
+  position: absolute;
+  bottom: 7px;
+  right: 4px;
+  padding: 4px;
+  background-color:black;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px;
 }
 
 .video-info-div {
@@ -40,4 +65,5 @@
   line-height: 20px;
   margin-bottom: 8px;
   color: black;
+  cursor: pointer;
 }
